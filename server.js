@@ -6,4 +6,12 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(router);
 
-module.exports = server;
+// Check if running locally or on Vercel
+if (require.main === module) {
+    const port = process.env.PORT || 5005;
+    server.listen(port, () => {
+        console.log(`JSON Server is running at http://localhost:${port}`);
+    });
+}
+
+module.exports = server; // Export for Vercel
