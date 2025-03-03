@@ -7,7 +7,7 @@ const server = jsonServer.create();
 const middlewares = jsonServer.defaults();
 
 // ✅ Fetch db.json from an external source
-const DB_URL = "https://github.com/sonphan18071999/tymex-nodejs/blob/main/db.json";
+const DB_URL = "https://raw.githubusercontent.com/sonphan18071999/tymex-nodejs/refs/heads/main/db.json";
 
 server.use(middlewares);
 
