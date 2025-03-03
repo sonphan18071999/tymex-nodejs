@@ -6,7 +6,6 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(router);
 
-// Check if running locally or on Vercel
 if (require.main === module) {
     const port = process.env.PORT || 5005;
     server.listen(port, () => {
@@ -14,4 +13,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = server; // Export for Vercel
+module.exports = server;
