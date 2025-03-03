@@ -11,6 +11,11 @@
   "author": "",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
+    "add": "^2.0.6",
+    "git": "^0.1.5",
     "json-server": "^0.17.4"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
