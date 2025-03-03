@@ -1,6 +1,7 @@
 const express = require("express");
 const jsonServer = require("json-server");
 const axios = require("axios");
+const cors = require('cors');
 
 const app = express();
 const middlewares = jsonServer.defaults();
