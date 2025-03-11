@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 const middlewares = jsonServer.defaults();
 
-app.use(cors({ origin: 'https://tymex-interview-frontend-sonphan-7g11.vercel.app' }));
+app.use(cors({ origin: ['https://tymex-interview-frontend-sonphan-7g11.vercel.app','http://localhost:3000/'] }));
 
 //Since vercel treat the db.json as Readonly so I need to retrieve it raw data from github
 const DB_URL = "https://raw.githubusercontent.com/sonphan18071999/tymex-nodejs/main/db.json";
